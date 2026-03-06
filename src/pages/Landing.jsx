@@ -8,8 +8,8 @@ import "swiper/css/navigation";
 
 const HERO_BANNERS = [
   "https://luxeria.in/wp-content/uploads/2026/01/Pink-Beauty-and-Feminine-Fashion-Boutique-Discount-Promotion-Banner-scaled.png",
-  "https://images.unsplash.com/photo-1483985988355-763728e1935b?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-  "https://images.unsplash.com/photo-1558769132-cb1aea458c5e?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  "https://images.unsplash.com/photo-1483985988355-763728e1935b?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8MHx8fA%3D%3D",
+  "https://images.unsplash.com/photo-1558769132-cb1aea458c5e?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8MHx8fA%3D%3D",
 ];
 
 const COLLECTION_IMAGES = {
@@ -23,7 +23,7 @@ const COLLECTION_IMAGES = {
 
 export default function Landing() {
   return (
-    <div className="bg-rose-50">
+    <div className="bg-violet-50">
       {/* HERO SLIDER */}
       <section className="relative">
         <Swiper
@@ -44,7 +44,6 @@ export default function Landing() {
                   loading={idx === 0 ? "eager" : "lazy"}
                 />
 
-                {/* Overlay content */}
                 <div className="pointer-events-none absolute inset-0 bg-black/20" />
 
                 <div className="absolute inset-0 flex items-center">
@@ -60,7 +59,7 @@ export default function Landing() {
 
                       <Link
                         to="/products"
-                        className="pointer-events-auto mt-6 inline-flex items-center justify-center rounded-xl bg-pink-500 px-7 py-3 text-sm font-semibold text-white shadow-lg transition hover:bg-pink-400 focus:outline-none focus:ring-4 focus:ring-pink-500/40"
+                        className="pointer-events-auto mt-6 inline-flex items-center justify-center rounded-xl bg-violet-500 px-7 py-3 text-sm font-semibold text-white shadow-lg transition hover:bg-violet-400 focus:outline-none focus:ring-4 focus:ring-violet-500/40"
                       >
                         Shop now
                       </Link>
@@ -72,11 +71,11 @@ export default function Landing() {
           ))}
         </Swiper>
 
-        <div className="pointer-events-none absolute inset-x-0 bottom-0 h-24 bg-linear-to-t from-rose-900/40 to-transparent" />
+        <div className="pointer-events-none absolute inset-x-0 bottom-0 h-24 bg-linear-to-t from-violet-900/30 to-transparent" />
       </section>
 
       {/* TRUST BAR */}
-      <section className="border-b border-rose-200 bg-white">
+      <section className="border-b border-violet-200 bg-white">
         <div className="mx-auto grid max-w-6xl gap-4 px-4 py-8 sm:px-6 md:grid-cols-3">
           <TrustItem
             title="Fast delivery"
@@ -97,21 +96,21 @@ export default function Landing() {
       </section>
 
       {/* FEATURED COLLECTIONS */}
-      <section className="bg-linear-to-b from-rose-50 via-pink-50 to-white">
+      <section className="bg-linear-to-b from-violet-50 via-purple-50 to-white">
         <div className="mx-auto max-w-6xl px-4 py-14 sm:px-6">
           <div className="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
             <div>
-              <h2 className="text-2xl font-bold tracking-tight text-rose-950 sm:text-3xl">
+              <h2 className="text-2xl font-bold tracking-tight text-violet-950 sm:text-3xl">
                 Featured collections
               </h2>
-              <p className="mt-1 text-sm text-rose-700">
+              <p className="mt-1 text-sm text-violet-700">
                 Curated styles for every mood.
               </p>
             </div>
 
             <Link
               to="/products"
-              className="text-sm font-semibold text-rose-700 hover:text-rose-900 hover:underline"
+              className="text-sm font-semibold text-violet-700 hover:text-violet-900 hover:underline"
             >
               View all products →
             </Link>
@@ -144,13 +143,13 @@ export default function Landing() {
       </section>
 
       {/* LUXE HERO */}
-      <section className="relative overflow-hidden bg-linear-to-b from-rose-950 via-rose-900 to-rose-950 text-white">
-        <div className="pointer-events-none absolute -top-24 left-1/2 h-72 w-72 -translate-x-1/2 rounded-full bg-pink-500/10 blur-3xl" />
-        <div className="pointer-events-none absolute -bottom-28 right-10 h-72 w-72 rounded-full bg-pink-500/10 blur-3xl" />
+      <section className="relative overflow-hidden bg-linear-to-b from-violet-950 via-violet-900 to-violet-950 text-white">
+        <div className="pointer-events-none absolute -top-24 left-1/2 h-72 w-72 -translate-x-1/2 rounded-full bg-violet-400/10 blur-3xl" />
+        <div className="pointer-events-none absolute -bottom-28 right-10 h-72 w-72 rounded-full bg-violet-400/10 blur-3xl" />
 
         <div className="mx-auto grid max-w-6xl items-center gap-10 px-4 py-16 sm:px-6 md:grid-cols-2 md:py-24">
           <div>
-            <span className="inline-flex items-center gap-2 rounded-full border border-pink-300/20 bg-pink-500/10 px-3 py-1 text-xs font-semibold text-white">
+            <span className="inline-flex items-center gap-2 rounded-full border border-violet-300/20 bg-violet-400/10 px-3 py-1 text-xs font-semibold text-white">
               ✨ New styles weekly
             </span>
 
@@ -165,7 +164,7 @@ export default function Landing() {
             <div className="mt-7">
               <Link
                 to="/products"
-                className="inline-flex rounded-xl bg-pink-500 px-6 py-3 text-sm font-semibold text-white transition hover:bg-pink-400 focus:ring-4 focus:ring-pink-500/30"
+                className="inline-flex rounded-xl bg-violet-500 px-6 py-3 text-sm font-semibold text-white transition hover:bg-violet-400 focus:ring-4 focus:ring-violet-500/30"
               >
                 Shop now
               </Link>
@@ -184,7 +183,7 @@ export default function Landing() {
       {/* CTA */}
       <section className="bg-white">
         <div className="mx-auto max-w-6xl px-4 pb-16 pt-14 sm:px-6">
-          <div className="rounded-2xl border border-rose-200 bg-rose-950 px-6 py-10 text-white sm:px-10">
+          <div className="rounded-2xl border border-violet-200 bg-violet-950 px-6 py-10 text-white sm:px-10">
             <div className="flex flex-col gap-6 sm:flex-row sm:items-center sm:justify-between">
               <div>
                 <h3 className="text-xl font-bold">
@@ -197,7 +196,7 @@ export default function Landing() {
 
               <Link
                 to="/products"
-                className="rounded-xl bg-pink-500 px-6 py-3 text-sm font-semibold text-white hover:bg-pink-400"
+                className="rounded-xl bg-violet-500 px-6 py-3 text-sm font-semibold text-white hover:bg-violet-400"
               >
                 Shop now
               </Link>
@@ -222,13 +221,13 @@ function PreviewCard({ title, subtitle }) {
 
 function TrustItem({ title, desc, icon }) {
   return (
-    <div className="flex gap-3 rounded-2xl border border-rose-200 bg-white p-5 shadow-sm">
-      <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-rose-100">
+    <div className="flex gap-3 rounded-2xl border border-violet-200 bg-white p-5 shadow-sm">
+      <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-violet-100">
         <span>{icon}</span>
       </div>
       <div>
-        <p className="text-sm font-semibold text-rose-950">{title}</p>
-        <p className="mt-1 text-sm text-rose-700">{desc}</p>
+        <p className="text-sm font-semibold text-violet-950">{title}</p>
+        <p className="mt-1 text-sm text-violet-700">{desc}</p>
       </div>
     </div>
   );
@@ -236,7 +235,7 @@ function TrustItem({ title, desc, icon }) {
 
 function CollectionCard({ title, desc, tag, badge, imageUrl }) {
   return (
-    <div className="group overflow-hidden rounded-2xl border border-rose-200 bg-white transition hover:-translate-y-0.5 hover:shadow-md">
+    <div className="group overflow-hidden rounded-2xl border border-violet-200 bg-white transition hover:-translate-y-0.5 hover:shadow-md">
       <div className="relative h-44">
         <img
           src={imageUrl}
@@ -244,20 +243,20 @@ function CollectionCard({ title, desc, tag, badge, imageUrl }) {
           className="h-full w-full object-cover transition group-hover:scale-105"
           loading="lazy"
         />
-        <div className="absolute inset-0 bg-linear-to-b from-rose-900/30 to-rose-900/40" />
+        <div className="absolute inset-0 bg-linear-to-b from-violet-900/25 to-violet-900/35" />
 
-        <span className="absolute left-4 top-4 rounded-full bg-rose-600 px-3 py-1 text-xs font-semibold text-white">
+        <span className="absolute left-4 top-4 rounded-full bg-violet-600 px-3 py-1 text-xs font-semibold text-white">
           {badge}
         </span>
       </div>
 
       <div className="p-5">
-        <p className="font-semibold text-rose-950">{title}</p>
-        <p className="mt-1 text-sm text-rose-700">{desc}</p>
+        <p className="font-semibold text-violet-950">{title}</p>
+        <p className="mt-1 text-sm text-violet-700">{desc}</p>
 
         <Link
           to={`/products/?category=${tag}`}
-          className="mt-4 inline-flex text-sm font-semibold text-rose-700 hover:text-rose-900 hover:underline"
+          className="mt-4 inline-flex text-sm font-semibold text-violet-700 hover:text-violet-900 hover:underline"
         >
           Shop collection →
         </Link>

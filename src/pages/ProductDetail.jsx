@@ -11,18 +11,18 @@ function SkeletonDetail() {
   return (
     <div className="mx-auto max-w-6xl px-4 py-10 sm:px-6">
       <div className="grid gap-10 md:grid-cols-2">
-        <div className="animate-pulse overflow-hidden rounded-2xl border border-rose-200 bg-white">
-          <div className="h-105 bg-rose-100" />
+        <div className="animate-pulse overflow-hidden rounded-2xl border border-violet-200 bg-white">
+          <div className="h-105 bg-violet-100" />
         </div>
 
         <div className="animate-pulse">
-          <div className="h-7 w-2/3 rounded bg-rose-100" />
-          <div className="mt-4 h-4 w-full rounded bg-rose-100" />
-          <div className="mt-2 h-4 w-5/6 rounded bg-rose-100" />
-          <div className="mt-2 h-4 w-2/3 rounded bg-rose-100" />
-          <div className="mt-6 h-8 w-28 rounded bg-rose-100" />
-          <div className="mt-6 h-10 w-full rounded-xl bg-rose-100" />
-          <div className="mt-3 h-10 w-full rounded-xl bg-rose-100" />
+          <div className="h-7 w-2/3 rounded bg-violet-100" />
+          <div className="mt-4 h-4 w-full rounded bg-violet-100" />
+          <div className="mt-2 h-4 w-5/6 rounded bg-violet-100" />
+          <div className="mt-2 h-4 w-2/3 rounded bg-violet-100" />
+          <div className="mt-6 h-8 w-28 rounded bg-violet-100" />
+          <div className="mt-6 h-10 w-full rounded-xl bg-violet-100" />
+          <div className="mt-3 h-10 w-full rounded-xl bg-violet-100" />
         </div>
       </div>
     </div>
@@ -41,15 +41,15 @@ function StarRow({ rating = 4.4, count = 128 }) {
           return (
             <span
               key={i}
-              className={filled ? "text-amber-500" : "text-rose-200"}
+              className={filled ? "text-amber-500" : "text-violet-200"}
             >
               ★
             </span>
           );
         })}
       </div>
-      <span className="text-sm font-semibold text-rose-950">{rating}</span>
-      <span className="text-sm text-rose-600">({count} reviews)</span>
+      <span className="text-sm font-semibold text-violet-950">{rating}</span>
+      <span className="text-sm text-violet-600">({count} reviews)</span>
     </div>
   );
 }
@@ -57,7 +57,7 @@ function StarRow({ rating = 4.4, count = 128 }) {
 function Accordion({ items }) {
   const [open, setOpen] = useState(0);
   return (
-    <div className="divide-y divide-rose-100 overflow-hidden rounded-2xl border border-rose-200 bg-white">
+    <div className="divide-y divide-violet-100 overflow-hidden rounded-2xl border border-violet-200 bg-white">
       {items.map((it, idx) => (
         <div key={it.title}>
           <button
@@ -65,13 +65,13 @@ function Accordion({ items }) {
             onClick={() => setOpen(open === idx ? -1 : idx)}
             className="flex w-full items-center justify-between px-5 py-4 text-left"
           >
-            <span className="text-sm font-semibold text-rose-950">
+            <span className="text-sm font-semibold text-violet-950">
               {it.title}
             </span>
-            <span className="text-rose-500">{open === idx ? "−" : "+"}</span>
+            <span className="text-violet-500">{open === idx ? "−" : "+"}</span>
           </button>
           {open === idx ? (
-            <div className="px-5 pb-5 text-sm leading-6 text-rose-700">
+            <div className="px-5 pb-5 text-sm leading-6 text-violet-700">
               {it.content}
             </div>
           ) : null}
@@ -88,9 +88,8 @@ export default function ProductDetail() {
   const [loading, setLoading] = useState(true);
   const [err, setErr] = useState("");
 
-  // dummy fashion options (static)
   const colors = [
-    { name: "Rose", class: "bg-rose-400" },
+    { name: "Lavender", class: "bg-violet-400" },
     { name: "Black", class: "bg-slate-900" },
     { name: "Cream", class: "bg-amber-100" },
   ];
@@ -153,8 +152,6 @@ export default function ProductDetail() {
       storeId: STORE_ID,
       title: product.title,
       price,
-      // OPTIONAL: if your cart store supports meta
-      // meta: { color: selectedColor?.name, size: selectedSize },
     });
 
     toast.success(
@@ -188,14 +185,14 @@ export default function ProductDetail() {
   if (!product) {
     return (
       <div className="mx-auto max-w-6xl px-4 py-10 sm:px-6">
-        <div className="rounded-2xl border border-rose-200 bg-white p-10 text-center">
-          <div className="mx-auto mb-3 flex h-12 w-12 items-center justify-center rounded-2xl bg-rose-100">
+        <div className="rounded-2xl border border-violet-200 bg-white p-10 text-center">
+          <div className="mx-auto mb-3 flex h-12 w-12 items-center justify-center rounded-2xl bg-violet-100">
             🛍️
           </div>
-          <h2 className="text-lg font-semibold text-rose-950">
+          <h2 className="text-lg font-semibold text-violet-950">
             Product not found
           </h2>
-          <p className="mt-1 text-sm text-rose-700">
+          <p className="mt-1 text-sm text-violet-700">
             This product may no longer be available.
           </p>
         </div>
@@ -204,19 +201,19 @@ export default function ProductDetail() {
   }
 
   return (
-    <div className="min-h-[70vh] bg-linear-to-b from-rose-50 via-pink-50 to-white">
+    <div className="min-h-[70vh] bg-linear-to-b from-violet-50 via-purple-50 to-white">
       <div className="mx-auto max-w-6xl px-4 py-8 sm:px-6">
         {/* BREADCRUMB */}
-        <div className="mb-6 flex flex-wrap items-center gap-2 text-sm text-rose-600">
-          <Link to="/" className="hover:text-rose-900">
+        <div className="mb-6 flex flex-wrap items-center gap-2 text-sm text-violet-600">
+          <Link to="/" className="hover:text-violet-900">
             Home
           </Link>
-          <span className="text-rose-300">/</span>
-          <Link to="/products" className="hover:text-rose-900">
+          <span className="text-violet-300">/</span>
+          <Link to="/products" className="hover:text-violet-900">
             Products
           </Link>
-          <span className="text-rose-300">/</span>
-          <span className="font-semibold text-rose-950 line-clamp-1">
+          <span className="text-violet-300">/</span>
+          <span className="line-clamp-1 font-semibold text-violet-950">
             {product.title}
           </span>
         </div>
@@ -224,8 +221,8 @@ export default function ProductDetail() {
         <div className="grid gap-10 lg:grid-cols-12">
           {/* LEFT: GALLERY */}
           <div className="lg:col-span-7">
-            <div className="overflow-hidden rounded-3xl border border-rose-200 bg-white shadow-sm">
-              <div className="relative bg-rose-50">
+            <div className="overflow-hidden rounded-3xl border border-violet-200 bg-white shadow-sm">
+              <div className="relative bg-violet-50">
                 <div className="group relative aspect-4/5 overflow-hidden">
                   <img
                     src={getProxiedImage(product.image_url)}
@@ -234,23 +231,21 @@ export default function ProductDetail() {
                     loading="lazy"
                   />
 
-                  {/* badge */}
                   {product?.badge ? (
-                    <span className="absolute left-4 top-4 rounded-full bg-rose-600 px-3 py-1 text-xs font-semibold text-white shadow">
+                    <span className="absolute left-4 top-4 rounded-full bg-violet-600 px-3 py-1 text-xs font-semibold text-white shadow">
                       {product.badge}
                     </span>
                   ) : null}
 
-                  {/* overlay chips */}
                   <div className="absolute bottom-4 left-4 right-4">
                     <div className="flex flex-wrap gap-2">
-                      <span className="rounded-full bg-white/90 px-3 py-1 text-xs font-semibold text-rose-900 backdrop-blur">
+                      <span className="rounded-full bg-white/90 px-3 py-1 text-xs font-semibold text-violet-900 backdrop-blur">
                         ✨ Premium finish
                       </span>
-                      <span className="rounded-full bg-white/90 px-3 py-1 text-xs font-semibold text-rose-900 backdrop-blur">
+                      <span className="rounded-full bg-white/90 px-3 py-1 text-xs font-semibold text-violet-900 backdrop-blur">
                         🧵 Soft-touch fabric
                       </span>
-                      <span className="rounded-full bg-white/90 px-3 py-1 text-xs font-semibold text-rose-900 backdrop-blur">
+                      <span className="rounded-full bg-white/90 px-3 py-1 text-xs font-semibold text-violet-900 backdrop-blur">
                         🧼 Easy care
                       </span>
                     </div>
@@ -268,22 +263,22 @@ export default function ProductDetail() {
               ].map((b) => (
                 <div
                   key={b.t}
-                  className="rounded-2xl border border-rose-200 bg-white p-4"
+                  className="rounded-2xl border border-violet-200 bg-white p-4"
                 >
-                  <div className="text-sm font-semibold text-rose-950">
+                  <div className="text-sm font-semibold text-violet-950">
                     {b.t}
                   </div>
-                  <div className="mt-1 text-xs text-rose-600">{b.d}</div>
+                  <div className="mt-1 text-xs text-violet-600">{b.d}</div>
                 </div>
               ))}
             </div>
           </div>
 
-          {/* RIGHT: BUY BOX (sticky on desktop) */}
+          {/* RIGHT: BUY BOX */}
           <div className="lg:col-span-5">
             <div className="lg:sticky lg:top-6">
-              <div className="rounded-3xl border border-rose-200 bg-white p-6 shadow-sm">
-                <h1 className="text-2xl font-bold tracking-tight text-rose-950 sm:text-3xl">
+              <div className="rounded-3xl border border-violet-200 bg-white p-6 shadow-sm">
+                <h1 className="text-2xl font-bold tracking-tight text-violet-950 sm:text-3xl">
                   {product.title}
                 </h1>
 
@@ -293,8 +288,8 @@ export default function ProductDetail() {
                     className={[
                       "rounded-full px-3 py-1 text-xs font-semibold",
                       product?.is_active === false
-                        ? "bg-rose-100 text-rose-500"
-                        : "bg-pink-100 text-pink-700",
+                        ? "bg-violet-100 text-violet-500"
+                        : "bg-violet-100 text-violet-700",
                     ].join(" ")}
                   >
                     {product?.is_active === false ? "Out of stock" : "In stock"}
@@ -302,11 +297,11 @@ export default function ProductDetail() {
                 </div>
 
                 {product?.short_description ? (
-                  <p className="mt-3 text-sm text-rose-700">
+                  <p className="mt-3 text-sm text-violet-700">
                     {product.short_description}
                   </p>
                 ) : (
-                  <p className="mt-3 text-sm text-rose-700">
+                  <p className="mt-3 text-sm text-violet-700">
                     A modern essential designed for everyday style — clean
                     lines, premium feel, effortless fit.
                   </p>
@@ -314,16 +309,16 @@ export default function ProductDetail() {
 
                 {/* PRICE */}
                 <div className="mt-5 flex flex-wrap items-end gap-3">
-                  <div className="text-3xl font-extrabold text-rose-950">
+                  <div className="text-3xl font-extrabold text-violet-950">
                     ₹{price}
                   </div>
 
                   {product?.mrp ? (
-                    <div className="pb-1 text-sm text-rose-400 line-through">
+                    <div className="pb-1 text-sm text-violet-400 line-through">
                       ₹{Number(product.mrp)}
                     </div>
                   ) : (
-                    <div className="pb-1 text-sm text-rose-600">
+                    <div className="pb-1 text-sm text-violet-600">
                       MRP inclusive of all taxes
                     </div>
                   )}
@@ -333,8 +328,8 @@ export default function ProductDetail() {
                   </span>
                 </div>
 
-                <div className="mt-6 rounded-2xl border border-rose-200 bg-rose-50 p-4">
-                  <div className="text-sm font-semibold text-rose-950">
+                <div className="mt-6 rounded-2xl border border-violet-200 bg-violet-50 p-4">
+                  <div className="text-sm font-semibold text-violet-950">
                     Check delivery
                   </div>
                   <div className="mt-3 flex gap-2">
@@ -342,20 +337,20 @@ export default function ProductDetail() {
                       value={pincode}
                       onChange={(e) => setPincode(e.target.value)}
                       placeholder="Enter pincode"
-                      className="w-full rounded-xl border border-rose-200 bg-white px-3 py-2 text-sm text-rose-950 outline-none focus:border-pink-400 focus:ring-4 focus:ring-pink-100"
+                      className="w-full rounded-xl border border-violet-200 bg-white px-3 py-2 text-sm text-violet-950 outline-none focus:border-violet-400 focus:ring-4 focus:ring-violet-100"
                     />
                     <button
                       type="button"
                       onClick={handleCheckPincode}
-                      className="shrink-0 rounded-xl bg-rose-900 px-4 py-2 text-sm font-semibold text-white hover:bg-rose-800"
+                      className="shrink-0 rounded-xl bg-violet-900 px-4 py-2 text-sm font-semibold text-white hover:bg-violet-800"
                     >
                       Check
                     </button>
                   </div>
                   {pinMsg ? (
-                    <p className="mt-2 text-xs text-rose-700">{pinMsg}</p>
+                    <p className="mt-2 text-xs text-violet-700">{pinMsg}</p>
                   ) : (
-                    <p className="mt-2 text-xs text-rose-600">
+                    <p className="mt-2 text-xs text-violet-600">
                       COD available • Easy returns
                     </p>
                   )}
@@ -371,8 +366,8 @@ export default function ProductDetail() {
                       "w-full rounded-2xl px-6 py-3.5 text-sm font-semibold transition",
                       "focus:outline-none focus:ring-4",
                       product?.is_active === false
-                        ? "cursor-not-allowed bg-rose-200 text-rose-500"
-                        : "bg-pink-500 text-white hover:bg-pink-400 focus:ring-pink-300",
+                        ? "cursor-not-allowed bg-violet-200 text-violet-500"
+                        : "bg-violet-500 text-white hover:bg-violet-400 focus:ring-violet-300",
                     ].join(" ")}
                   >
                     {product?.is_active === false
@@ -384,11 +379,11 @@ export default function ProductDetail() {
                 </div>
 
                 {/* OFFERS */}
-                <div className="mt-6 rounded-2xl border border-rose-200 bg-white p-4">
-                  <div className="text-sm font-semibold text-rose-950">
+                <div className="mt-6 rounded-2xl border border-violet-200 bg-white p-4">
+                  <div className="text-sm font-semibold text-violet-950">
                     Offers for you
                   </div>
-                  <ul className="mt-3 space-y-2 text-sm text-rose-700">
+                  <ul className="mt-3 space-y-2 text-sm text-violet-700">
                     <li className="flex gap-2">
                       <span>🏷️</span> Flat 10% off on prepaid orders
                     </li>
@@ -450,17 +445,17 @@ export default function ProductDetail() {
         </div>
 
         {/* FOOT TRUST */}
-        <div className="mt-10 flex flex-wrap gap-2 text-xs text-rose-700">
-          <span className="rounded-full bg-rose-100 px-3 py-1">
+        <div className="mt-10 flex flex-wrap gap-2 text-xs text-violet-700">
+          <span className="rounded-full bg-violet-100 px-3 py-1">
             🔒 Secure payments
           </span>
-          <span className="rounded-full bg-rose-100 px-3 py-1">
+          <span className="rounded-full bg-violet-100 px-3 py-1">
             🚚 Fast shipping
           </span>
-          <span className="rounded-full bg-rose-100 px-3 py-1">
+          <span className="rounded-full bg-violet-100 px-3 py-1">
             ↩️ Easy returns
           </span>
-          <span className="rounded-full bg-rose-100 px-3 py-1">
+          <span className="rounded-full bg-violet-100 px-3 py-1">
             ✅ Quality checked
           </span>
         </div>

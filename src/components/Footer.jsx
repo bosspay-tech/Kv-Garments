@@ -4,7 +4,7 @@ export default function Footer() {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="mt-14 border-t border-rose-200 bg-white">
+    <footer className="mt-14 border-t border-violet-200 bg-white">
       <div className="mx-auto max-w-6xl px-4 py-12 sm:px-6">
         {/* Top */}
         <div className="grid gap-10 lg:grid-cols-12">
@@ -12,53 +12,50 @@ export default function Footer() {
           <div className="lg:col-span-4">
             <Link
               to="/"
-              className="inline-flex items-center gap-3 rounded-2xl px-2 py-1 font-extrabold tracking-tight text-rose-950 hover:bg-rose-50"
+              className="inline-flex items-center gap-3 rounded-2xl px-2 py-1 font-extrabold tracking-tight text-violet-950 hover:bg-violet-50"
               aria-label="Go to homepage"
             >
-              <span className="inline-flex h-11 w-11 items-center justify-center rounded-2xl bg-rose-950 text-white shadow-sm">
-                S
-              </span>
               <div className="leading-tight">
-                <div className="text-lg">Store</div>
-                <div className="text-xs font-semibold text-rose-600">
+                <div className="text-lg">KV Garments</div>
+                <div className="text-xs font-semibold text-violet-600">
                   Fashion essentials • Everyday premium
                 </div>
               </div>
             </Link>
 
-            <p className="mt-4 max-w-sm text-sm leading-6 text-rose-700">
+            <p className="mt-4 max-w-sm text-sm leading-6 text-violet-700">
               Premium styles, simple checkout, and fast support. Designed for a
               modern wardrobe — clean silhouettes, comfortable fits.
             </p>
 
             {/* Trust badges */}
-            <div className="mt-5 flex flex-wrap gap-2 text-xs text-rose-700">
-              <span className="rounded-full border border-rose-200 bg-rose-50 px-3 py-1">
+            <div className="mt-5 flex flex-wrap gap-2 text-xs text-violet-700">
+              <span className="rounded-full border border-violet-200 bg-violet-50 px-3 py-1">
                 🔒 Secure payments
               </span>
-              <span className="rounded-full border border-rose-200 bg-rose-50 px-3 py-1">
+              <span className="rounded-full border border-violet-200 bg-violet-50 px-3 py-1">
                 🚚 Fast shipping
               </span>
-              <span className="rounded-full border border-rose-200 bg-rose-50 px-3 py-1">
+              <span className="rounded-full border border-violet-200 bg-violet-50 px-3 py-1">
                 ↩️ Easy returns
               </span>
             </div>
 
             {/* Newsletter (optional) */}
-            <div className="mt-6 rounded-3xl border border-rose-200 bg-linear-to-b from-rose-50 to-white p-4">
-              <div className="text-sm font-semibold text-rose-950">
+            <div className="mt-6 rounded-3xl border border-violet-200 bg-linear-to-b from-violet-50 to-white p-4">
+              <div className="text-sm font-semibold text-violet-950">
                 Get style drops & offers
               </div>
               <div className="mt-3 flex gap-2">
                 <input
                   placeholder="Enter your email"
-                  className="w-full rounded-2xl border border-rose-200 bg-white px-4 py-2.5 text-sm text-rose-950 outline-none transition focus:border-pink-400 focus:ring-4 focus:ring-pink-100"
+                  className="w-full rounded-2xl border border-violet-200 bg-white px-4 py-2.5 text-sm text-violet-950 outline-none transition focus:border-violet-400 focus:ring-4 focus:ring-violet-100"
                 />
-                <button className="shrink-0 rounded-2xl bg-rose-950 px-4 py-2.5 text-sm font-semibold text-white transition hover:bg-rose-900 focus:outline-none focus:ring-4 focus:ring-rose-200">
+                <button className="shrink-0 rounded-2xl bg-violet-950 px-4 py-2.5 text-sm font-semibold text-white transition hover:bg-violet-900 focus:outline-none focus:ring-4 focus:ring-violet-200">
                   Join
                 </button>
               </div>
-              <p className="mt-2 text-xs text-rose-600">
+              <p className="mt-2 text-xs text-violet-600">
                 No spam. Unsubscribe anytime.
               </p>
             </div>
@@ -68,11 +65,11 @@ export default function Footer() {
           <div className="lg:col-span-8">
             <div className="grid grid-cols-2 gap-8 sm:grid-cols-3">
               <div>
-                <h4 className="text-sm font-bold text-rose-950">Shop</h4>
+                <h4 className="text-sm font-bold text-violet-950">Shop</h4>
                 <ul className="mt-4 space-y-2.5 text-sm">
                   <li>
                     <Link
-                      className="text-rose-700 hover:text-rose-950"
+                      className="text-violet-700 hover:text-violet-950"
                       to="/products"
                     >
                       All Products
@@ -80,7 +77,7 @@ export default function Footer() {
                   </li>
                   <li>
                     <Link
-                      className="text-rose-700 hover:text-rose-950"
+                      className="text-violet-700 hover:text-violet-950"
                       to="/cart"
                     >
                       Cart
@@ -88,7 +85,7 @@ export default function Footer() {
                   </li>
                   <li>
                     <Link
-                      className="text-rose-700 hover:text-rose-950"
+                      className="text-violet-700 hover:text-violet-950"
                       to="/orders"
                     >
                       Orders
@@ -98,11 +95,11 @@ export default function Footer() {
               </div>
 
               <div>
-                <h4 className="text-sm font-bold text-rose-950">Support</h4>
+                <h4 className="text-sm font-bold text-violet-950">Support</h4>
                 <ul className="mt-4 space-y-2.5 text-sm">
                   <li>
                     <Link
-                      className="text-rose-700 hover:text-rose-950"
+                      className="text-violet-700 hover:text-violet-950"
                       to="/shipping"
                     >
                       Shipping Policy
@@ -110,7 +107,7 @@ export default function Footer() {
                   </li>
                   <li>
                     <Link
-                      className="text-rose-700 hover:text-rose-950"
+                      className="text-violet-700 hover:text-violet-950"
                       to="/returns-refunds"
                     >
                       Returns & Refunds
@@ -118,25 +115,25 @@ export default function Footer() {
                   </li>
                 </ul>
 
-                <div className="mt-5 rounded-2xl border border-rose-200 bg-rose-50 p-4">
-                  <div className="text-xs font-semibold text-rose-950">
+                <div className="mt-5 rounded-2xl border border-violet-200 bg-violet-50 p-4">
+                  <div className="text-xs font-semibold text-violet-950">
                     Customer care
                   </div>
-                  <div className="mt-1 text-xs text-rose-700">
+                  <div className="mt-1 text-xs text-violet-700">
                     Email: support@pecifycollections.com
                   </div>
-                  <div className="mt-1 text-xs text-rose-700">
+                  <div className="mt-1 text-xs text-violet-700">
                     Hours: Mon–Sat • 10am–6pm
                   </div>
                 </div>
               </div>
 
               <div>
-                <h4 className="text-sm font-bold text-rose-950">Company</h4>
+                <h4 className="text-sm font-bold text-violet-950">Company</h4>
                 <ul className="mt-4 space-y-2.5 text-sm">
                   <li>
                     <Link
-                      className="text-rose-700 hover:text-rose-950"
+                      className="text-violet-700 hover:text-violet-950"
                       to="/privacy-policy"
                     >
                       Privacy Policy
@@ -144,7 +141,7 @@ export default function Footer() {
                   </li>
                   <li>
                     <Link
-                      className="text-rose-700 hover:text-rose-950"
+                      className="text-violet-700 hover:text-violet-950"
                       to="/terms-of-service"
                     >
                       Terms of Service
@@ -152,7 +149,7 @@ export default function Footer() {
                   </li>
                   <li>
                     <Link
-                      className="text-rose-700 hover:text-rose-950"
+                      className="text-violet-700 hover:text-violet-950"
                       to="/contact"
                     >
                       Contact
@@ -161,10 +158,10 @@ export default function Footer() {
                 </ul>
 
                 <div className="mt-5 flex flex-wrap gap-2 text-xs">
-                  <span className="rounded-full border border-rose-200 bg-white px-3 py-1 text-rose-700">
+                  <span className="rounded-full border border-violet-200 bg-white px-3 py-1 text-violet-700">
                     ✨ New arrivals weekly
                   </span>
-                  <span className="rounded-full border border-rose-200 bg-white px-3 py-1 text-rose-700">
+                  <span className="rounded-full border border-violet-200 bg-white px-3 py-1 text-violet-700">
                     ✅ Quality checked
                   </span>
                 </div>
@@ -180,12 +177,12 @@ export default function Footer() {
               ].map((x) => (
                 <div
                   key={x.t}
-                  className="rounded-2xl border border-rose-200 bg-white p-4"
+                  className="rounded-2xl border border-violet-200 bg-white p-4"
                 >
-                  <div className="text-sm font-semibold text-rose-950">
+                  <div className="text-sm font-semibold text-violet-950">
                     {x.t}
                   </div>
-                  <div className="mt-1 text-xs text-rose-600">{x.d}</div>
+                  <div className="mt-1 text-xs text-violet-600">{x.d}</div>
                 </div>
               ))}
             </div>
@@ -193,31 +190,31 @@ export default function Footer() {
         </div>
 
         {/* Bottom */}
-        <div className="mt-10 flex flex-col gap-4 border-t border-rose-200 pt-6 sm:flex-row sm:items-center sm:justify-between">
-          <p className="text-xs text-rose-600">
+        <div className="mt-10 flex flex-col gap-4 border-t border-violet-200 pt-6 sm:flex-row sm:items-center sm:justify-between">
+          <p className="text-xs text-violet-600">
             © {year} Store. All rights reserved.
           </p>
 
-          <div className="flex flex-wrap items-center gap-3 text-xs text-rose-700">
-            <Link className="hover:text-rose-950" to="/privacy-policy">
+          <div className="flex flex-wrap items-center gap-3 text-xs text-violet-700">
+            <Link className="hover:text-violet-950" to="/privacy-policy">
               Privacy
             </Link>
-            <span className="text-rose-200">•</span>
-            <Link className="hover:text-rose-950" to="/terms-of-service">
+            <span className="text-violet-200">•</span>
+            <Link className="hover:text-violet-950" to="/terms-of-service">
               Terms
             </Link>
-            <span className="text-rose-200">•</span>
-            <Link className="hover:text-rose-950" to="/returns-refunds">
+            <span className="text-violet-200">•</span>
+            <Link className="hover:text-violet-950" to="/returns-refunds">
               Returns
             </Link>
-            <span className="text-rose-200">•</span>
-            <Link className="hover:text-rose-950" to="/shipping">
+            <span className="text-violet-200">•</span>
+            <Link className="hover:text-violet-950" to="/shipping">
               Shipping
             </Link>
           </div>
 
-          <div className="flex items-center gap-2 text-xs text-rose-700">
-            <span className="rounded-full border border-rose-200 bg-rose-50 px-3 py-1">
+          <div className="flex items-center gap-2 text-xs text-violet-700">
+            <span className="rounded-full border border-violet-200 bg-violet-50 px-3 py-1">
               Visa / Mastercard / UPI
             </span>
           </div>

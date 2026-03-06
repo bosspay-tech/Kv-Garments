@@ -118,7 +118,7 @@ export default function OrderCard({ order }) {
         </div>
       </div>
 
-      {/* Footer (optional actions) */}
+      {/* Footer */}
       <div className="flex flex-col gap-2 border-t border-slate-200 px-5 py-4 sm:flex-row sm:items-center sm:justify-between">
         <p className="text-xs text-slate-500">
           Need help? Contact support with Order #{orderNo}.
@@ -129,7 +129,7 @@ export default function OrderCard({ order }) {
             type="button"
             onClick={() => {
               navigator.clipboard?.writeText(String(order?.id || ""));
-              toast.success('Order Id copied to clipboard');
+              toast.success("Order Id copied to clipboard");
             }}
             className="rounded-xl border border-slate-200 bg-white px-3 py-2 text-xs font-semibold text-slate-900 transition hover:bg-slate-50 focus:outline-none focus:ring-4 focus:ring-slate-100"
           >

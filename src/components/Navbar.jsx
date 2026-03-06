@@ -30,8 +30,8 @@ export default function Navbar() {
       className={({ isActive }) =>
         cx(
           "rounded-lg px-3 py-2 text-sm font-medium transition",
-          "hover:bg-rose-100 hover:text-rose-900",
-          isActive ? "bg-rose-100 text-rose-900" : "text-rose-700",
+          "hover:bg-violet-100 hover:text-violet-900",
+          isActive ? "bg-violet-100 text-violet-900" : "text-violet-700",
         )
       }
     >
@@ -40,17 +40,17 @@ export default function Navbar() {
   );
 
   return (
-    <header className="sticky top-0 z-50 border-b border-rose-200 bg-white/80 backdrop-blur">
+    <header className="sticky top-0 z-50 border-b border-violet-200 bg-white/80 backdrop-blur">
       <nav className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 sm:px-6">
         {/* BRAND */}
         <div className="flex items-center gap-3">
           <Link
             to="/"
             onClick={() => setOpen(false)}
-            className="flex items-center gap-2 rounded-xl px-2 py-1 font-bold tracking-tight text-rose-950 hover:bg-rose-100"
+            className="flex items-center gap-2 rounded-xl px-2 py-1 font-bold tracking-tight text-violet-950 hover:bg-violet-100"
             aria-label="Go to homepage"
           >
-            <span className="text-lg">Pecify Collections</span>
+            <span className="text-lg">KV Garments</span>
           </Link>
         </div>
 
@@ -59,7 +59,7 @@ export default function Navbar() {
           <NavItem to="/cart">
             <span className="flex items-center gap-2">
               Cart
-              <span className="inline-flex min-w-7 items-center justify-center rounded-full bg-pink-500 px-2 py-0.5 text-xs font-semibold text-white">
+              <span className="inline-flex min-w-7 items-center justify-center rounded-full bg-violet-500 px-2 py-0.5 text-xs font-semibold text-white">
                 {cartCount}
               </span>
             </span>
@@ -73,7 +73,7 @@ export default function Navbar() {
                   setOpen(false);
                   signOut();
                 }}
-                className="rounded-xl bg-pink-500 px-4 py-2 text-sm font-semibold text-white transition hover:bg-pink-400 focus:outline-none focus:ring-4 focus:ring-pink-300"
+                className="rounded-xl bg-violet-500 px-4 py-2 text-sm font-semibold text-white transition hover:bg-violet-400 focus:outline-none focus:ring-4 focus:ring-violet-300"
               >
                 Logout
               </button>
@@ -84,7 +84,7 @@ export default function Navbar() {
               <Link
                 to="/signup"
                 onClick={() => setOpen(false)}
-                className="rounded-xl bg-pink-500 px-4 py-2 text-sm font-semibold text-white transition hover:bg-pink-400 focus:outline-none focus:ring-4 focus:ring-pink-300"
+                className="rounded-xl bg-violet-500 px-4 py-2 text-sm font-semibold text-white transition hover:bg-violet-400 focus:outline-none focus:ring-4 focus:ring-violet-300"
               >
                 Sign up
               </Link>
@@ -97,12 +97,12 @@ export default function Navbar() {
           <Link
             to="/cart"
             onClick={() => setOpen(false)}
-            className="relative rounded-xl px-3 py-2 text-sm font-semibold text-rose-800 hover:bg-rose-100"
+            className="relative rounded-xl px-3 py-2 text-sm font-semibold text-violet-800 hover:bg-violet-100"
             aria-label="Cart"
           >
             Cart
             {cartCount > 0 ? (
-              <span className="absolute -right-1 -top-1 inline-flex h-5 min-w-5 items-center justify-center rounded-full bg-pink-500 px-1 text-[11px] font-bold text-white">
+              <span className="absolute -right-1 -top-1 inline-flex h-5 min-w-5 items-center justify-center rounded-full bg-violet-500 px-1 text-[11px] font-bold text-white">
                 {cartCount}
               </span>
             ) : null}
@@ -110,7 +110,7 @@ export default function Navbar() {
 
           <button
             onClick={() => setOpen((v) => !v)}
-            className="rounded-xl border border-rose-200 bg-white px-3 py-2 text-sm font-semibold text-rose-900 hover:bg-rose-50 focus:outline-none focus:ring-4 focus:ring-pink-200"
+            className="rounded-xl border border-violet-200 bg-white px-3 py-2 text-sm font-semibold text-violet-900 hover:bg-violet-50 focus:outline-none focus:ring-4 focus:ring-violet-200"
             aria-label="Toggle menu"
             aria-expanded={open}
           >
@@ -121,7 +121,7 @@ export default function Navbar() {
 
       {/* MOBILE DROPDOWN */}
       <div className={cx("md:hidden", open ? "block" : "hidden")}>
-        <div className="mx-auto max-w-6xl border-t border-rose-200 bg-white px-4 py-3 sm:px-6">
+        <div className="mx-auto max-w-6xl border-t border-violet-200 bg-white px-4 py-3 sm:px-6">
           <div className="flex flex-col gap-1">
             {user ? (
               <>
@@ -131,7 +131,7 @@ export default function Navbar() {
                     setOpen(false);
                     signOut();
                   }}
-                  className="mt-2 w-full rounded-xl bg-pink-500 px-4 py-2 text-left text-sm font-semibold text-white transition hover:bg-pink-400 focus:outline-none focus:ring-4 focus:ring-pink-300"
+                  className="mt-2 w-full rounded-xl bg-violet-500 px-4 py-2 text-left text-sm font-semibold text-white transition hover:bg-violet-400 focus:outline-none focus:ring-4 focus:ring-violet-300"
                 >
                   Logout
                 </button>
@@ -142,14 +142,14 @@ export default function Navbar() {
                 <Link
                   to="/signup"
                   onClick={() => setOpen(false)}
-                  className="mt-2 w-full rounded-xl bg-pink-500 px-4 py-2 text-center text-sm font-semibold text-white transition hover:bg-pink-400 focus:outline-none focus:ring-4 focus:ring-pink-300"
+                  className="mt-2 w-full rounded-xl bg-violet-500 px-4 py-2 text-center text-sm font-semibold text-white transition hover:bg-violet-400 focus:outline-none focus:ring-4 focus:ring-violet-300"
                 >
                   Sign up
                 </Link>
               </>
             )}
 
-            <p className="mt-3 text-xs text-rose-500">
+            <p className="mt-3 text-xs text-violet-500">
               Secure checkout • Fast support • Easy returns
             </p>
           </div>

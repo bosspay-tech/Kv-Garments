@@ -20,7 +20,7 @@ export default function Contact() {
           <div className="rounded-3xl border border-violet-200 bg-white p-6 shadow-sm">
             <div className="text-xs font-semibold text-violet-600">COMPANY</div>
             <h2 className="mt-2 text-lg font-extrabold text-violet-950">
-              PECIFY INFRA PAYMENT SOLUTION PRIVATE LIMITED
+              KV GARMENTS
             </h2>
 
             <div className="mt-5 space-y-4 text-sm text-violet-700">
@@ -29,9 +29,8 @@ export default function Contact() {
                   ADDRESS
                 </div>
                 <p className="mt-1 leading-6">
-                  4th Floor, 434, Shiven Square, <br />
-                  Pal Road, Opp Swsthik Party Plot, <br />
-                  Adajan, Surat, Gujarat - 395009
+                  No,16,ANJANEYAR KOVIL STREET,
+                  <br /> Pallavaram, chennai-600043
                 </p>
               </div>
 
@@ -43,7 +42,7 @@ export default function Contact() {
                   href="tel:+917048179839"
                   className="mt-1 inline-flex items-center gap-2 font-semibold text-violet-950 hover:text-violet-800"
                 >
-                  +91 7048179839
+                  +91 7604888693
                 </a>
               </div>
             </div>
@@ -54,16 +53,6 @@ export default function Contact() {
                 className="inline-flex w-full items-center justify-center rounded-2xl bg-violet-500 px-5 py-3 text-sm font-semibold text-white transition hover:bg-violet-400 focus:outline-none focus:ring-4 focus:ring-violet-200"
               >
                 Call Now
-              </a>
-              <a
-                target="_blank"
-                rel="noreferrer"
-                href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
-                  "4th Floor,434, Shiven Square, Pal Road, opp swsthik party plot, Adajan, Surat, Gujarat 395009",
-                )}`}
-                className="inline-flex w-full items-center justify-center rounded-2xl border border-violet-200 bg-white px-5 py-3 text-sm font-semibold text-violet-700 transition hover:bg-violet-50 focus:outline-none focus:ring-4 focus:ring-violet-100"
-              >
-                Open in Maps
               </a>
             </div>
           </div>

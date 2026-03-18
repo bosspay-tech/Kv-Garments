@@ -46,15 +46,15 @@ export default function Footer() {
               </div>
 
               <div className="mt-3 text-xs text-violet-700">
-                📞 +91 9342491462
+                📞 +91 7604888693
               </div>
 
               <div className="mt-2 text-xs text-violet-700">
-                GST: 33AAJCE5444Q1Z5
+                GST: 33BPGPR1809Q2ZE
               </div>
 
               <div className="mt-1 text-xs text-violet-700">
-                CIN: U47640TN2026PTC190322
+                UDYAM REG : UDYAM-TN-34-0091825
               </div>
             </div>
 

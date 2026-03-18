@@ -50,7 +50,7 @@ export default function Navbar() {
             className="flex items-center gap-2 rounded-xl px-2 py-1 font-bold tracking-tight text-violet-950 hover:bg-violet-100"
             aria-label="Go to homepage"
           >
-            <span className="text-lg">KV Garments</span>
+            <span className="text-lg">KV ENTERPRISES GARMENTS & CATERS</span>
           </Link>
         </div>
 

@@ -45,6 +45,26 @@ export default function Contact() {
                   +91 7604888693
                 </a>
               </div>
+              <div>
+                <div className="text-xs font-semibold text-violet-600">GST</div>
+                <a
+                  href="tel:+917048179839"
+                  className="mt-1 inline-flex items-center gap-2 font-semibold text-violet-950 hover:text-violet-800"
+                >
+                  33BPGPR1809Q2ZE
+                </a>
+              </div>
+              <div>
+                <div className="text-xs font-semibold text-violet-600">
+                  UDYAM REG
+                </div>
+                <a
+                  href="tel:+917048179839"
+                  className="mt-1 inline-flex items-center gap-2 font-semibold text-violet-950 hover:text-violet-800"
+                >
+                  UDYAM-TN-34-0091825
+                </a>
+              </div>
             </div>
 
             <div className="mt-6 flex flex-col gap-3 sm:flex-row">

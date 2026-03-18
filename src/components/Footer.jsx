@@ -4,22 +4,17 @@ export default function Footer() {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="mt-14 border-t border-violet-200 bg-white">
-      <div className="mx-auto max-w-6xl px-4 py-12 sm:px-6">
-        {/* Top */}
-        <div className="grid gap-10 lg:grid-cols-12">
+    <footer className="mt-16 border-t border-violet-100 bg-linear-to-b from-white to-violet-50/40">
+      <div className="mx-auto max-w-6xl px-4 py-14 sm:px-6">
+        <div className="grid gap-12 lg:grid-cols-12">
           {/* Brand */}
           <div className="lg:col-span-4">
-            <Link
-              to="/"
-              className="inline-flex items-center gap-3 rounded-2xl px-2 py-1 font-extrabold tracking-tight text-violet-950 hover:bg-violet-50"
-              aria-label="Go to homepage"
-            >
-              <div className="leading-tight">
-                <div className="text-lg">KV Garments</div>
-                <div className="text-xs font-semibold text-violet-600">
-                  Fashion essentials • Everyday premium
-                </div>
+            <Link to="/" className="inline-block text-violet-950">
+              <div className="text-xl font-extrabold tracking-tight">
+                KV Garments
+              </div>
+              <div className="text-xs font-medium text-violet-500">
+                Fashion essentials • Everyday premium
               </div>
             </Link>
 
@@ -28,48 +23,57 @@ export default function Footer() {
               modern wardrobe — clean silhouettes, comfortable fits.
             </p>
 
+            {/* Registered Office */}
+            <div className="mt-6 rounded-2xl border border-violet-200 bg-white p-4 shadow-sm">
+              <div className="text-xs font-semibold text-violet-900">
+                Registered Office
+              </div>
+
+              <div className="mt-2 text-xs text-violet-700 leading-5">
+                KV ENTERPRISES GARMENTS & CATERS
+                <br />
+                16, Anjaneyar Koil Street
+                <br />
+                Pallavaram, Chennai – 600043
+              </div>
+
+              <div className="mt-3 text-xs text-violet-700">
+                📞 +91 9342491462
+              </div>
+
+              <div className="mt-2 text-xs text-violet-700">
+                GST: 33AAJCE5444Q1Z5
+              </div>
+
+              <div className="mt-1 text-xs text-violet-700">
+                CIN: U47640TN2026PTC190322
+              </div>
+            </div>
+
             {/* Trust badges */}
-            <div className="mt-5 flex flex-wrap gap-2 text-xs text-violet-700">
-              <span className="rounded-full border border-violet-200 bg-violet-50 px-3 py-1">
+            <div className="mt-6 flex flex-wrap gap-2 text-xs">
+              <span className="rounded-full border border-violet-200 bg-white px-3 py-1 text-violet-700">
                 🔒 Secure payments
               </span>
-              <span className="rounded-full border border-violet-200 bg-violet-50 px-3 py-1">
+              <span className="rounded-full border border-violet-200 bg-white px-3 py-1 text-violet-700">
                 🚚 Fast shipping
               </span>
-              <span className="rounded-full border border-violet-200 bg-violet-50 px-3 py-1">
+              <span className="rounded-full border border-violet-200 bg-white px-3 py-1 text-violet-700">
                 ↩️ Easy returns
               </span>
             </div>
-
-            {/* Newsletter (optional) */}
-            <div className="mt-6 rounded-3xl border border-violet-200 bg-linear-to-b from-violet-50 to-white p-4">
-              <div className="text-sm font-semibold text-violet-950">
-                Get style drops & offers
-              </div>
-              <div className="mt-3 flex gap-2">
-                <input
-                  placeholder="Enter your email"
-                  className="w-full rounded-2xl border border-violet-200 bg-white px-4 py-2.5 text-sm text-violet-950 outline-none transition focus:border-violet-400 focus:ring-4 focus:ring-violet-100"
-                />
-                <button className="shrink-0 rounded-2xl bg-violet-950 px-4 py-2.5 text-sm font-semibold text-white transition hover:bg-violet-900 focus:outline-none focus:ring-4 focus:ring-violet-200">
-                  Join
-                </button>
-              </div>
-              <p className="mt-2 text-xs text-violet-600">
-                No spam. Unsubscribe anytime.
-              </p>
-            </div>
           </div>
 
-          {/* Link Columns */}
+          {/* Links */}
           <div className="lg:col-span-8">
-            <div className="grid grid-cols-2 gap-8 sm:grid-cols-3">
+            <div className="grid grid-cols-2 gap-10 sm:grid-cols-3">
+              {/* Shop */}
               <div>
-                <h4 className="text-sm font-bold text-violet-950">Shop</h4>
-                <ul className="mt-4 space-y-2.5 text-sm">
+                <h4 className="text-sm font-bold text-violet-900">Shop</h4>
+                <ul className="mt-4 space-y-2 text-sm">
                   <li>
                     <Link
-                      className="text-violet-700 hover:text-violet-950"
+                      className="text-violet-600 hover:text-violet-900"
                       to="/products"
                     >
                       All Products
@@ -77,7 +81,7 @@ export default function Footer() {
                   </li>
                   <li>
                     <Link
-                      className="text-violet-700 hover:text-violet-950"
+                      className="text-violet-600 hover:text-violet-900"
                       to="/cart"
                     >
                       Cart
@@ -85,7 +89,7 @@ export default function Footer() {
                   </li>
                   <li>
                     <Link
-                      className="text-violet-700 hover:text-violet-950"
+                      className="text-violet-600 hover:text-violet-900"
                       to="/orders"
                     >
                       Orders
@@ -94,12 +98,13 @@ export default function Footer() {
                 </ul>
               </div>
 
+              {/* Support */}
               <div>
-                <h4 className="text-sm font-bold text-violet-950">Support</h4>
-                <ul className="mt-4 space-y-2.5 text-sm">
+                <h4 className="text-sm font-bold text-violet-900">Support</h4>
+                <ul className="mt-4 space-y-2 text-sm">
                   <li>
                     <Link
-                      className="text-violet-700 hover:text-violet-950"
+                      className="text-violet-600 hover:text-violet-900"
                       to="/shipping"
                     >
                       Shipping Policy
@@ -107,7 +112,7 @@ export default function Footer() {
                   </li>
                   <li>
                     <Link
-                      className="text-violet-700 hover:text-violet-950"
+                      className="text-violet-600 hover:text-violet-900"
                       to="/returns-refunds"
                     >
                       Returns & Refunds
@@ -115,25 +120,26 @@ export default function Footer() {
                   </li>
                 </ul>
 
-                <div className="mt-5 rounded-2xl border border-violet-200 bg-violet-50 p-4">
-                  <div className="text-xs font-semibold text-violet-950">
+                <div className="mt-5 rounded-xl border border-violet-200 bg-white p-3">
+                  <div className="text-xs font-semibold text-violet-900">
                     Customer care
                   </div>
-                  <div className="mt-1 text-xs text-violet-700">
-                    Email: support@kvgarments.com
+                  <div className="mt-1 text-xs text-violet-600">
+                    support@kvgarments.com
                   </div>
-                  <div className="mt-1 text-xs text-violet-700">
-                    Hours: Mon–Sat • 10am–6pm
+                  <div className="text-xs text-violet-500">
+                    Mon–Sat • 10am–6pm
                   </div>
                 </div>
               </div>
 
+              {/* Company */}
               <div>
-                <h4 className="text-sm font-bold text-violet-950">Company</h4>
-                <ul className="mt-4 space-y-2.5 text-sm">
+                <h4 className="text-sm font-bold text-violet-900">Company</h4>
+                <ul className="mt-4 space-y-2 text-sm">
                   <li>
                     <Link
-                      className="text-violet-700 hover:text-violet-950"
+                      className="text-violet-600 hover:text-violet-900"
                       to="/privacy-policy"
                     >
                       Privacy Policy
@@ -141,48 +147,39 @@ export default function Footer() {
                   </li>
                   <li>
                     <Link
-                      className="text-violet-700 hover:text-violet-950"
+                      className="text-violet-600 hover:text-violet-900"
                       to="/terms-of-service"
                     >
-                      Terms of Service
+                      Terms
                     </Link>
                   </li>
                   <li>
                     <Link
-                      className="text-violet-700 hover:text-violet-950"
+                      className="text-violet-600 hover:text-violet-900"
                       to="/contact"
                     >
                       Contact
                     </Link>
                   </li>
                 </ul>
-
-                <div className="mt-5 flex flex-wrap gap-2 text-xs">
-                  <span className="rounded-full border border-violet-200 bg-white px-3 py-1 text-violet-700">
-                    ✨ New arrivals weekly
-                  </span>
-                  <span className="rounded-full border border-violet-200 bg-white px-3 py-1 text-violet-700">
-                    ✅ Quality checked
-                  </span>
-                </div>
               </div>
             </div>
 
-            {/* Mini bar */}
-            <div className="mt-10 grid gap-3 sm:grid-cols-3">
+            {/* Highlights */}
+            <div className="mt-10 grid gap-4 sm:grid-cols-3">
               {[
-                { t: "Free shipping", d: "On orders above ₹999" },
-                { t: "Easy returns", d: "7-day return window" },
-                { t: "Secure checkout", d: "UPI / Cards / Wallets" },
+                { t: "Free shipping", d: "Above ₹999" },
+                { t: "Easy returns", d: "7 days" },
+                { t: "Secure checkout", d: "UPI / Cards" },
               ].map((x) => (
                 <div
                   key={x.t}
-                  className="rounded-2xl border border-violet-200 bg-white p-4"
+                  className="rounded-xl border border-violet-200 bg-white p-4 text-center"
                 >
-                  <div className="text-sm font-semibold text-violet-950">
+                  <div className="text-sm font-semibold text-violet-900">
                     {x.t}
                   </div>
-                  <div className="mt-1 text-xs text-violet-600">{x.d}</div>
+                  <div className="text-xs text-violet-600 mt-1">{x.d}</div>
                 </div>
               ))}
             </div>
@@ -190,33 +187,24 @@ export default function Footer() {
         </div>
 
         {/* Bottom */}
-        <div className="mt-10 flex flex-col gap-4 border-t border-violet-200 pt-6 sm:flex-row sm:items-center sm:justify-between">
-          <p className="text-xs text-violet-600">
-            © {year} Store. All rights reserved.
+        <div className="mt-12 flex flex-col gap-4 border-t border-violet-100 pt-6 sm:flex-row sm:justify-between">
+          <p className="text-xs text-violet-500">
+            © {year} KV Garments. All rights reserved.
           </p>
 
-          <div className="flex flex-wrap items-center gap-3 text-xs text-violet-700">
-            <Link className="hover:text-violet-950" to="/privacy-policy">
+          <div className="flex flex-wrap items-center gap-3 text-xs text-violet-600">
+            <Link to="/privacy-policy" className="hover:text-violet-900">
               Privacy
             </Link>
-            <span className="text-violet-200">•</span>
-            <Link className="hover:text-violet-950" to="/terms-of-service">
+            <Link to="/terms-of-service" className="hover:text-violet-900">
               Terms
             </Link>
-            <span className="text-violet-200">•</span>
-            <Link className="hover:text-violet-950" to="/returns-refunds">
+            <Link to="/returns-refunds" className="hover:text-violet-900">
               Returns
             </Link>
-            <span className="text-violet-200">•</span>
-            <Link className="hover:text-violet-950" to="/shipping">
+            <Link to="/shipping" className="hover:text-violet-900">
               Shipping
             </Link>
-          </div>
-
-          <div className="flex items-center gap-2 text-xs text-violet-700">
-            <span className="rounded-full border border-violet-200 bg-violet-50 px-3 py-1">
-              Visa / Mastercard / UPI
-            </span>
           </div>
         </div>
       </div>

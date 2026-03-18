@@ -29,12 +29,20 @@ export default function Footer() {
                 Registered Office
               </div>
 
-              <div className="mt-2 text-xs text-violet-700 leading-5">
-                KV ENTERPRISES GARMENTS & CATERS
+              <div className="mt-2 text-xs text-violet-700 leading-5 uppercase">
+                Building No./Flat No.: 16
                 <br />
-                16, Anjaneyar Koil Street
+                Road/Street: ANJANEYAR KOIL STREET
                 <br />
-                Pallavaram, Chennai – 600043
+                Locality/Sub Locality: PALLAVARAM
+                <br />
+                City/Town/Village: Chennai
+                <br />
+                District: Chennai
+                <br />
+                State: Tamil Nadu
+                <br />
+                PIN Code: 600043
               </div>
 
               <div className="mt-3 text-xs text-violet-700">

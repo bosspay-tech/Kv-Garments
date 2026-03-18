@@ -25,13 +25,65 @@ export default function Contact() {
 
             <div className="mt-5 space-y-4 text-sm text-violet-700">
               <div>
-                <div className="text-xs font-semibold text-violet-600">
+                <div className="text-lg font-semibold text-violet-600">
                   ADDRESS
                 </div>
-                <p className="mt-1 leading-6">
-                  No,16,ANJANEYAR KOVIL STREET,
-                  <br /> Pallavaram, chennai-600043
-                </p>
+                <div className="flex items-center gap-3 text-sm">
+                  <div className="font-semibold text-violet-600">
+                    Building No./Flat No. :
+                  </div>
+                  <p className="inline-flex items-center gap-2 font-semibold text-violet-950 hover:text-violet-800">
+                    16
+                  </p>
+                </div>
+                <div className="flex items-center gap-3 text-sm">
+                  <div className="font-semibold text-violet-600">
+                    Road/Street:
+                  </div>
+                  <p className="font-semibold text-violet-950 hover:text-violet-800">
+                    ANJANEYAR KOIL STREET
+                  </p>
+                </div>
+                <div className="flex items-center gap-3 text-sm">
+                  <div className="font-semibold text-violet-600">
+                    Locality/Sub Locality:
+                  </div>
+                  <p className=" font-semibold text-violet-950 hover:text-violet-800">
+                    ESSA PALLAVARAM
+                  </p>
+                </div>
+                <div className="flex items-center gap-3 text-sm">
+                  <div className="font-semibold text-violet-600">
+                    City/Town/Village:
+                  </div>
+                  <p className=" font-semibold text-violet-950 hover:text-violet-800">
+                    Chennai
+                  </p>
+                </div>
+                <div className="flex items-center gap-3 text-sm">
+                  <div className="font-semibold text-violet-600">
+                    District:
+                  </div>
+                  <p className="font-semibold text-violet-950 hover:text-violet-800">
+                    Chennai
+                  </p>
+                </div>
+                <div className="flex items-center gap-3 text-sm">
+                  <div className="font-semibold text-violet-600">
+                    State:
+                  </div>
+                  <p className=" font-semibold text-violet-950 hover:text-violet-800">
+                    Tamil Nadu
+                  </p>
+                </div>
+                <div className="flex items-center gap-3 text-sm">
+                  <div className="font-semibold text-violet-600">
+                    PIN Code:
+                  </div>
+                  <p className=" font-semibold text-violet-950 hover:text-violet-800">
+                    600043
+                  </p>
+                </div>
               </div>
 
               <div>
@@ -47,10 +99,7 @@ export default function Contact() {
               </div>
               <div>
                 <div className="text-xs font-semibold text-violet-600">GST</div>
-                <a
-                  href="tel:+917048179839"
-                  className="mt-1 inline-flex items-center gap-2 font-semibold text-violet-950 hover:text-violet-800"
-                >
+                <a className="mt-1 inline-flex items-center gap-2 font-semibold text-violet-950 hover:text-violet-800">
                   33BPGPR1809Q2ZE
                 </a>
               </div>
@@ -58,10 +107,7 @@ export default function Contact() {
                 <div className="text-xs font-semibold text-violet-600">
                   UDYAM REG
                 </div>
-                <a
-                  href="tel:+917048179839"
-                  className="mt-1 inline-flex items-center gap-2 font-semibold text-violet-950 hover:text-violet-800"
-                >
+                <a className="mt-1 inline-flex items-center gap-2 font-semibold text-violet-950 hover:text-violet-800">
                   UDYAM-TN-34-0091825
                 </a>
               </div>

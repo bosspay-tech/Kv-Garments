@@ -27,12 +27,33 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Landing />} />
         <Route path="/products" element={<Products />} />
-        <Route path="/cart" element={<Cart />} />
+        <Route
+          path="/cart"
+          element={
+            <ProtectedRoute>
+              <Cart />
+            </ProtectedRoute>
+          }
+        />
         <Route path="/products/:id" element={<ProductDetail />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/login" element={<Login />} />
-        <Route path="/checkout" element={<Checkout />} />
-        <Route path="/order-success" element={<OrderSuccess />} />
+        <Route
+          path="/checkout"
+          element={
+            <ProtectedRoute>
+              <Checkout />
+            </ProtectedRoute>
+          }
+        />
+        <Route
+          path="/order-success"
+          element={
+            <ProtectedRoute>
+              <OrderSuccess />
+            </ProtectedRoute>
+          }
+        />
         <Route path="/shipping" element={<ShippingPolicy />} />
         <Route path="/returns-refunds" element={<ReturnsRefunds />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
